@@ -5,7 +5,7 @@
 }
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -15,18 +15,13 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
+  max-width: 1440px;
   font-weight: 600;
-  justify-content: center;
-  background-image : radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8,#777);
+  background: aqua;
 }
 .wrapper {
-  width: 90rem;
   height: 3rem;
   background-color: black;
-  display: flex;
   align-items: center;
   border-radius: 0rem 0rem 1rem 1rem;
 }
@@ -41,4 +36,25 @@ body {
 .cart{
   width: 3rem;
   margin-left: auto;
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Карточка авто */
+
+.card{
+  border: white;
+}
+.section-1{
+  text-align: center;
+  float: left;
+}
+.img-auto{
+  width: 20rem;
 }
