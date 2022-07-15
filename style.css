@@ -45,6 +45,37 @@ body {
   flex-wrap: wrap;
 }
 
+/* Сортировка */
+/* По значению */
+ul{
+  display: flex;
+}
+
+li{
+  list-style: none;
+}
+.btn{
+  border: 0.1rem solid red;
+  border-radius: 0.3rem;
+}
+.btn:hover{
+  cursor: pointer;
+}
+
+/* По диапозону */
+.settings{
+  display: block;
+  border: 0.2rem solid;
+  border-radius: 1rem;
+}
+.as{
+  display: flex;
+}
+
+/* поиск */
+
+
+
 
 /* Карточка авто */
 
