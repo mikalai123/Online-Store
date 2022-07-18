@@ -68,9 +68,12 @@ li{
   border: 0.2rem solid;
   border-radius: 1rem;
 }
-.as{
-  display: flex;
+
+/* Ползунок */
+#slider-range, #slider-range1 {
+  max-width: 200px;
 }
+
 
 /* поиск */
 
@@ -89,3 +92,6 @@ li{
 .img-auto{
   width: 20rem;
 }
+
+
+

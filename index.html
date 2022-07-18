@@ -3,10 +3,14 @@
     <title>Online-Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="/assets/dcode.css">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -99,15 +103,12 @@
         </div>
         <div>
           <div>
-            <div>
-              <h5>Количество на складе</h5>
-            </div>
             <div class="as">
-              <div>1</div>
-              <div>
-                <span>__________________</span>
-              </div>
-              <div>10</div>
+              <p>
+                <label for="amount">Количество на складе:</label>
+                <input class="qw" type="text" id="amount" readonly style="border:0; color:#00ff73; font-weight:bold;">
+              </p>
+              <div id="slider-range"></div>
             </div>
           </div>
           
@@ -116,14 +117,13 @@
         <div>
           <div>
             <div>
-              <h5>Год выпуска</h5>
-            </div>
-            <div class="as">
-              <div>2020</div>
-              <div>
-                <span>__________________</span>
+              <div class="as">
+                <p>
+                  <label for="amount">Год выпуска:</label>
+                  <input class="qw" type="text" id="amount1" readonly style="border:0; color:#00ff73; font-weight:bold;">
+                </p>
+                <div id="slider-range1"></div>
               </div>
-              <div>2022</div>
             </div>
           </div>
           
@@ -150,6 +150,13 @@
     </div>
 
     
+
+
+
+   
+
+   
+  
 
 
 
