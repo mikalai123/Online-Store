@@ -24,6 +24,7 @@ body {
   background-color: black;
   align-items: center;
   border-radius: 0rem 0rem 1rem 1rem;
+  margin-top: -10px;
 }
 .logo{
   width: 3rem;
@@ -37,12 +38,17 @@ body {
   width: 3rem;
   margin-left: auto;
 }
+
+.cart:hover{
+  cursor: pointer;
+}
 .container{
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 /* Сортировка */
@@ -89,6 +95,9 @@ li{
   text-align: center;
   float: left;
 }
+.section-1:hover{
+  cursor: pointer;
+}
 .img-auto{
   width: 20rem;
 }
@@ -96,9 +105,16 @@ li{
 
 /* Footer */
 
-.footer{
-  height: 50px;
-  background: black;
+.footer__inner {
+  display: contents;
 }
 
+.footer__title{
+  width: 100px;
+}
+
+.github{
+  color: white;
+  font-size: 33px;
+}
 
