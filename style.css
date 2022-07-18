@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  justify-content: center;
+}
+
+body {
+  max-width: 1440px;
+  font-weight: 600;
+  background: aqua;
+}
+.wrapper {
+  height: 4rem;
+  background-color: black;
+  align-items: center;
+  border-radius: 0rem 0rem 1rem 1rem;
+  margin-top: -10px;
+}
+#checkout{
+  background: black;
+}
+.logo{
+  width: 3rem;
+  color: white;
+}
+.title{
+  color: wheat;
+  margin-left: auto;
+}
+.cart{
+  width: 3rem;
+  margin-left: auto;
+}
+
+.cart:hover{
+  cursor: pointer;
+}
+.check{
+  color: white;
+  width: 20px;
+  background: deeppink;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -27px;
+  margin-left: 16px;
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.container_main{
+  margin-top: 200px;
+}
+.shopping_list {
+  margin-left: -201px;
+  width: 255px;
+  text-align: center;
+}
+
+/* Сортировка */
+/* По значению */
+ul{
+  display: flex;
+}
+
+li{
+  list-style: none;
+}
+.btn{
+  border: 0.1rem solid red;
+  border-radius: 0.3rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.add_item{
+  color: #fff;
+  background: #000;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  outline: none;
+  transition: background 9999999s;
+}
+.add_item:active {
+  background: red;
+  transition: background 0s;
+}
+
+.item_box:active{
+  background: red;
+  transition: background 0s;
+
+}
+
+/* По диапозону */
+.settings {
+  display: block;
+  border: 0.2rem solid;
+  border-radius: 1rem;
+}
+
+/* Ползунок */
+#slider-range, #slider-range1 {
+  max-width: 200px;
+}
+
+
+/* поиск */
+
+
+
+
+/* Карточка авто */
+.section-1{
+  text-align: center;
+  float: left;
+}
+.section-1:hover{
+  cursor: pointer;
+}
+.img-auto{
+  width: 20rem;
+}
+
+
+/* Footer */
+
+.footer__inner {
+  display: contents;
+}
+
+.footer__title{
+  width: 100px;
+}
+
+.github{
+  color: white;
+  font-size: 33px;
+}
+
