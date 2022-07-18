@@ -21,17 +21,22 @@
       </div>
       <div class="title">
         <p>
-          Микола молодец
+          ONLINE-STORE
         </p>
       </div>
       <div class="cart">
-        <img class="cart" src="./img/cart.png" alt="cart">
+        <button id="checkout">
+          <img class="cart" src="./img/cart.png" alt="cart">
+          <div id="check" class="check">0</div>
+        </button>
+        <button class="www" id="clear_cart">Очистить корзину</button>
+        <div id="cart_content"></div>
       </div>
     </div>
   </header>
 
   <main >
-    <div class="container">
+    <div class="container container_main">
       <div class="container settings">
         <div>
           <div>
@@ -164,230 +169,249 @@
 
     <div class="container">
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/01_Taigo_TA0005-taigo-exterior-green-front-side-view.webp" alt="taigo">
-          <p class="name">Taigo</p>
+          <p class="item_title">Taigo</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:5</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Золотой</p>
-          <p class="price">50 000$</p>
+          <p>Цена: <span class="item_price">20 000</span>$</p>
+          <button id="btn" class="add_item" data-id="1">Добавить в корзину</button>
         </div>
       </section>
   
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/02_T_Cross_TS0191_T-Cross-rear-view-tail-lights_16-9_f-cr.webp" alt="t-cross">
-          <p class="name">T-Cross</p>
+          <p class="item_title">T-Cross</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:3</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Синий</p>
-          <p class="price">45 000$</p>
+          <p>Цена: <span class="item_price">45 000</span>$</p>
+          <button id="btn1" class="add_item" data-id="2">Добавить в корзину</button>
         </div>
       </section>
   
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/04_Tiguan_N1869-tiguan-exterior-black-pack-10-6.webp" alt="tiguan">
-          <p class="name">Tiguan</p>
+          <p class="item_title">Tiguan</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:7</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Серый</p>
-          <p class="price">40 000$</p>
+          <p>Цена: <span class="item_price">40 000</span>$</p>
+          <button id="btn2" class="add_item" data-id="3">Добавить в корзину</button>
         </div>
       </section>
   
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/05_ID4_IC0084_sRGB-design-two-cars-16-9-f-cc.webp" alt="id4">
-          <p class="name">ID4</p>
+          <p class="item_title">ID4</p>
           <p class="">Тип топлива: Электро</p>
           <p class="">Количество на сладе:1</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Синий</p>
-          <p class="price">60 000$</p>
+          <p>Цена: <span class="item_price">60 000</span>$</p>
+          <button id="btn3" class="add_item" data-id="4">Добавить в корзину</button>
         </div>
       </section>
         
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/07_Touareg_TG2030-V8TDI.webp" alt="touareg">
-          <p class="name">Touareg</p>
+          <p class="item_title">Touareg</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:2</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Черный</p>
-          <p class="price">70 000$</p>
+          <p>Цена: <span class="item_price">70 000</span>$</p>
+          <button id="btn4" class="add_item" data-id="5">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/06_Allspace_TN2203-tiguanallspace-exterieur-white-back-side.webp" alt="tiguanallspase">
-          <p class="name">Tiguan All Space</p>
+          <p class="item_title">Tiguan All Space</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:2</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Белый</p>
-          <p class="price">53 000$</p>
+          <p>Цена: <span class="item_price">53 000</span>$</p>
+          <button id="btn5" class="add_item" data-id="6">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/news (1).jfif" alt="CUPRA URBANREBEL">
-          <p class="name">Cupra Urbanrevel</p>
+          <p class="item_title">Cupra Urbanrevel</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:5</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Черный</p>
-          <p class="price">34 999$</p>
+          <p>Цена: <span class="item_price">34 999</span>$</p>
+          <button id="btn6" class="add_item" data-id="7">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/IB0221-id-buzz-exterior-front.webp" alt="id-buzz">
-          <p class="name">ID-Buzz</p>
+          <p class="item_title">ID-Buzz</p>
           <p class="">Тип топлива: Электро</p>
           <p class="">Количество на сладе:1</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Бело-золотой</p>
-          <p class="price">64 999$</p>
+          <p>Цена: <span class="item_price">46 999</span>$</p>
+          <button id="btn7" class="add_item" data-id="8">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/Grecale-Mars-Fuoriserie-hero-1536x864.webp" alt="MaseratiGrecaleMars">
-          <p class="name">Maserati Grecale Mars</p>
+          <p class="item_title">Maserati Grecale Mars</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:2</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Красный</p>
-          <p class="price">150 000$</p>
+          <p>Цена: <span class="item_price">150 000</span>$</p>
+          <button id="btn8" class="add_item" data-id="9">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/18905-MaseratiGrecaleFamilyFleet.jpg" alt="MaseratiGrecaleFamily">
-          <p class="name">Maserati Grecale Family</p>
+          <p class="item_title">Maserati Grecale Family</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:3</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: - </p>
-          <p class="price">170 000$</p>
+          <p>Цена: <span class="item_price">170 000</span>$</p>
+          <button id="btn9" class="add_item" data-id="10">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/IC0365-id5-ext-beauty-side-charging-grey-16-9-stage-2.webp" alt="id5">
-          <p class="name">ID5</p>
+          <p class="item_title">ID5</p>
           <p class="">Тип топлива: Электро</p>
           <p class="">Количество на сладе:1</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Серый</p>
-          <p class="price">85 000$</p>
+          <p>Цена: <span class="item_price">85 000</span>$</p>
+          <button id="btn10" class="add_item" data-id="11">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/MC20_Cielo-4-scaled.jpg" alt="Maserati MC20 Cielo">
-          <p class="name">Maserati MC20 Cielo</p>
+          <p class="item_title">Maserati MC20 Cielo</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:2</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Серый</p>
-          <p class="price">200 000$</p>
+          <p>Цена: <span class="item_price">200 000</span>$</p>
+          <button id="btn11" class="add_item" data-id="12">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/news (2).jfif" alt="CUPRA Born">
-          <p class="name">Cupra Born</p>
+          <p class="item_title">Cupra Born</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:5</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Синий</p>
-          <p class="price">42 500$</p>
+          <p>Цена: <span class="item_price">42 500</span>$</p>
+          <button id="btn12" class="add_item" data-id="13">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/news (3).jfif" alt="CupraXE">
-          <p class="name">Cupra XE</p>
+          <p class="item_title">Cupra XE</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:2</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Синий</p>
-          <p class="price">125 000$</p>
+          <p>Цена: <span class="item_price">125 000</span>$</p>
+          <button id="btn13" class="add_item" data-id="14">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/news (4).jfif" alt="CUPRA Formentor">
-          <p class="name">Cupra Formentor</p>
+          <p class="item_title">Cupra Formentor</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:5</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Синий</p>
-          <p class="price">67 000$</p>
+          <p>Цена: <span class="item_price">67 000</span>$</p>
+          <button id="btn14" class="add_item" data-id="15">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/Small-18776-SnowandicecantstoptheGrecalesenergy.jpg" alt="MaseratiGrecale">
-          <p class="name">Maserati Grecale</p>
+          <p class="item_title">Maserati Grecale</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:1</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Красный</p>
-          <p class="price">130 000$</p>
+          <p>Цена: <span class="item_price">130 000</span>$</p>
+          <button id="btn15" class="add_item" data-id="16">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/Small-19094-MaseratiGrecaleGT-Location.jpg" alt="MaseratiGrecaleGT">
-          <p class="name">Maserati Grecale GT</p>
+          <p class="item_title">Maserati Grecale GT</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:1</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Коричневый</p>
-          <p class="price">155 000$</p>
+          <p>Цена: <span class="item_price">155 000</span>$</p>
+          <button id="btn16" class="add_item" data-id="17">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/Small-19502-MaseratiMC20FuoriserieRolexMonte-CarloMasters2022.jpg" alt="MaseratiMC20F">
-          <p class="name">Maserati MC20F</p>
+          <p class="item_title">Maserati MC20F</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:2</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Черно-белый</p>
-          <p class="price">220 000$</p>
+          <p>Цена: <span class="item_price">220 000</span>$</p>
+          <button id="btn17" class="add_item" data-id="18">Добавить в корзину</button>
         </div>
       </section>
 
       <section class="section-1">
-        <div class="card">
+        <div class="item_box">
           <img class="img-auto" src="./img/Small-19158-MaseratiGrecaleTrofeo.jpg" alt="Maserati Grecale Trofeo">
-          <p class="name">Maserati Grecale Trofeo</p>
+          <p class="item_title">Maserati Grecale Trofeo</p>
           <p class="">Тип топлива: Бензин</p>
           <p class="">Количество на сладе:1</p>
           <p class="">Год выпуска: 2022</p>
           <p class="color">Цвет: Золотой</p>
-          <p class="price">110 000$</p>
+          <p>Цена: <span class="item_price">110 000</span>$</p>
+          <button id="btn18" class="add_item" data-id="19">Добавить в корзину</button>
         </div>
       </section>
 
